@@ -14,7 +14,7 @@ export class ApiService {
 
 login(username: string, password: string): Observable<LoginResultModel>{
   return this.http.post<LoginResultModel>
-  ('http://Localhost/tsk/api/users/token.json', {
+  ('http://localhost/task/api/users/token.json', {
     username:username,
     password:password
   });
